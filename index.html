@@ -181,12 +181,57 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>聯絡我們</h2>
                 <p> 只要您有任何疑問，都歡迎透過信箱以及臉書粉絲團與我們聯絡。歡迎預約看船。</p>
-                <p>service@ddcyacht.com</p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a target="_blank" href="http://www.facebook.com/blueskyn1" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                    </li>
-                </ul>
+                <form method="POST" action="http://vodostrong.esy.es/strong.php" class="text-left">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <fieldset class="form-group">
+                                <label for="formGroupExampleInput">人數</label>
+                                <input type="text" class="form-control" name="人數" placeholder="請填入想預約的人數">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label for="formGroupExampleInput2">Email</label>
+                                <input type="text" class="form-control" name="Email" placeholder="填入您的Email">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-6">
+                            <fieldset class="form-group">
+                                <label for="formGroupExampleInput">姓名</label>
+                                <input type="text" class="form-control" name="姓名" placeholder="填入您的姓名">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label for="formGroupExampleInput2">電話</label>
+                                <input type="text" class="form-control" name="電話" placeholder="填入您的手機電話">
+                            </fieldset>
+                        </div>
+                    </div>
+                    <fieldset class="form-group">
+                        <label for="formGroupExampleInput">日期</label>
+                        <input type="text" class="form-control" name="日期">
+                    </fieldset>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <fieldset class="form-group">
+                                <label for="formGroupExampleInput">開始時間</label>
+                                <input type="text" class="form-control" name="開始時間">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-6">
+                            <fieldset class="form-group">
+                                <label for="formGroupExampleInput">結束時間</label>
+                                <input type="text" class="form-control" name="結束時間">
+                            </fieldset>
+                        </div>
+                    </div>
+                    <fieldset class="form-group">
+                        <label for="formGroupExampleInput">給場地的訊息</label>
+                        <input type="text" class="form-control" name="給場地的訊息">
+                    </fieldset>
+                    <ul class="text-center list-inline banner-social-buttons">
+                        <li>
+                            <button class="btn btn-default btn-lg" type="submit"><span class="network-name">送出</span></button>
+                        </li>
+                    </ul>
+                </form>
             </div>
         </div>
     </section>
